@@ -1,0 +1,35 @@
+{
+  "name": "promise-map",
+  "version": "1.0.0",
+  "description": "Map over an array and return a Promise",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test tape test.js",
+    "test-cov": "NODE_ENV=test istanbul cover test.js",
+    "lint": "eslint ."
+  },
+  "repository": "yoshuawuyts/promise-map",
+  "keywords": [
+    "promise",
+    "native",
+    "bluebird",
+    "map"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "native-or-bluebird": "^1.1.2"
+  },
+  "devDependencies": {
+    "bluebird": "^2.8.2",
+    "eslint": "^0.12.0",
+    "istanbul": "^0.3.5",
+    "tap-bail": "0.0.0",
+    "tap-spec": "^2.2.0",
+    "tape": "^3.4.0"
+  },
+  "files": [
+    "LICENSE",
+    "index.js",
+    "README.md"
+  ]
+}
