@@ -4,20 +4,20 @@
   "description": "Map over an array and return a Promise",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "NODE_ENV=test tape test.js",
-    "test-cov": "NODE_ENV=test istanbul cover test.js",
-    "lint": "eslint ."
+    "test-cov": "NODE_ENV=test istanbul cover test.js"
   },
   "repository": "yoshuawuyts/promise-map",
   "keywords": [
-    "promise",
-    "native",
     "bluebird",
-    "map"
+    "map",
+    "native",
+    "promise"
   ],
   "license": "MIT",
   "dependencies": {
-    "native-or-bluebird": "^1.1.2"
+    "any-promise": "^0.1.0"
   },
   "devDependencies": {
     "bluebird": "^2.8.2",
@@ -29,7 +29,7 @@
   },
   "files": [
     "LICENSE",
-    "index.js",
-    "README.md"
+    "README.md",
+    "index.js"
   ]
 }
