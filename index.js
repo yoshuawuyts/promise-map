@@ -11,6 +11,6 @@ function map(fn, ctx) {
   assert.equal(typeof fn, 'function')
   return function(val) {
     val = Array.isArray(val) ? val : [val]
-    return Promise.resolve(val.map(fn, ctx))
+    return Promise.all(val.map(fn, ctx))
   }
 }

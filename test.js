@@ -26,3 +26,18 @@ test('promise-map should map a fn', function(t) {
     t.fail('catch')
   }
 })
+
+test('promise-map should map a fn that returns promises', function(t) {
+  t.plan(1)
+  const res = Promise.resolve([2, 3, 4])
+    .then(map(mapFn))
+    .then(checkFn)
+
+  function mapFn(val) {
+    return Promise.resolve(val + 1);
+  }
+
+  function checkFn(val) {
+    t.deepEqual([3, 4, 5], val)
+  }
+})
